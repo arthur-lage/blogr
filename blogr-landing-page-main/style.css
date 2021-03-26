@@ -54,8 +54,137 @@ nav{
     padding: 0 1.5rem;
 }
 
+
+.product{
+    position: relative;
+    display: inline-block;
+}
+
+.product-dropdown{
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.product-dropdown a{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    justify-content: space-between;
+    font-family: "Ubuntu";
+    margin: 10px 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--super-black-blue);
+}
+
+.product-dropdown a:hover{
+    background-color: var(--grayish-blue);
+    color: var(--super-black-blue);
+    transition: 0.3s ease;
+}
+
+.product:hover .product-dropdown{
+    display: block;
+    transition: 0.3s ease;
+}
+
+.company{
+    position: relative;
+    display: inline-block;
+}
+
+.company-dropdown{
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.company-dropdown a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Ubuntu";
+    margin: 10px 10px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--super-black-blue);
+}
+
+.company-dropdown a:hover{
+    background-color: var(--grayish-blue);
+    color: var(--super-black-blue);
+    transition: 0.3s ease;
+}
+
+.company:hover .company-dropdown{
+    display: block;
+    transition: 0.3s ease;
+}
+
+.connect{
+    position: relative;
+    display: inline-block;
+}
+
+.connect-dropdown{
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.connect-dropdown a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    margin: 10px 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--super-black-blue);
+}
+
+.connect-dropdown a:hover{
+    background-color: var(--grayish-blue);
+    color: var(--super-black-blue);
+    transition: 0.3s ease;
+}
+
+.connect:hover .connect-dropdown{
+    display: block;
+    transition: 0.3s ease;
+}
+
+
 .login-signup-div button{
     margin: 0 1rem;
+}
+
+.login-signup-div{
+    margin-right: 5rem;
 }
 
 #login-button{
@@ -96,6 +225,11 @@ nav a{
     text-decoration: none;
     font-weight: 500;
     margin: 0 .5rem;
+}
+
+nav #logo{
+    margin-left: 6rem;
+    margin-right: 2.5rem;
 }
 
 #start-for-free-button{
@@ -254,10 +388,11 @@ main .text-block1 .content{
 main .text-block1 .content .texts{
     display: flex;
     flex-direction: column;
-    color: red;
+    color: var(--super-dark-blue);
     font-weight: 300;
     font-family: "Overpass";
     width: 100%;
+    font-size: 1.25rem;
     max-width: 800px;
     margin: 0 10rem;
 }
@@ -277,12 +412,12 @@ main .text-block1 h2{
 main .text-block1 h3{
     font-weight: 600;
     margin: 1rem 0;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--super-black-blue);
 }
 
 main .text-block1 img{
-    width: 50%;
+    width: 45%;
 }
 
 main .text-block2{
@@ -313,7 +448,7 @@ main .text-block2 .content .texts{
 }
 
 main .text-block2 .content .texts h2{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 1rem 0;
 }
