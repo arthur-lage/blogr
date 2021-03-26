@@ -26,10 +26,13 @@
 /* HEADER START */
 
 header{
-    background: linear-gradient(90deg, var(--super-light-red), var(--light-red));
+    background: url("images/bg-pattern-intro.svg") 300px -400px, linear-gradient(90deg, var(--background-super-light-red), var(--background-light-red));
     max-height: 100%;
-    height: 400px;
+    height: 500px;
+    overflow: hidden;
     border-radius: 0px 0px 0px 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav{
@@ -142,12 +145,12 @@ nav a{
 }
 
 .header-text h1{
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     font-size: 3rem;
 }
 
 .header-text p{
-    margin: 2rem 0;
+    margin: 3rem 0;
     font-size: 1.25rem;
 }
 
@@ -235,3 +238,129 @@ footer div p{
 }
 
 /* FOOTER END */
+
+/* MAIN START */
+
+main .text-block1 {
+    margin: 5rem 0;  
+}
+
+main .text-block1 .content{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+main .text-block1 .content .texts{
+    display: flex;
+    flex-direction: column;
+    color: red;
+    font-weight: 300;
+    font-family: "Overpass";
+    width: 100%;
+    max-width: 800px;
+    margin: 0 10rem;
+}
+
+main .text-block1 .texts div{
+    margin: 2rem 0;
+}
+
+main .text-block1 h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    font-family: "Overpass";
+    margin: 1rem 0;
+}
+
+main .text-block1 h3{
+    font-weight: 600;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    color: var(--super-black-blue);
+}
+
+main .text-block1 img{
+    width: 50%;
+}
+
+main .text-block2{
+    margin: 7.5rem 0;
+    border-radius: 0 100px 0 100px;
+    background: url("images/bg-pattern-circles.svg") -600px -800px, linear-gradient(90deg, var(--background-super-gray-blue), var(--background-desaturated-blue));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .text-block2 .content{
+    display: flex;
+    align-items: center;
+}
+
+main .text-block2 .content img{
+    width: 70%;
+    margin-left: 6rem;
+}
+
+main .text-block2 .content .texts{
+    font-family: "Overpass";
+    font-weight: 300;
+    flex-direction: column;
+    color: var(--white);
+    width: 100%;
+    max-width: 600px;
+}
+
+main .text-block2 .content .texts h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+main .text-block2 .content .texts p{
+    font-size: 1.25rem;
+    color: var(--grayish-blue);
+    line-height: 40px;
+}
+
+main .text-block3{
+    margin: 5rem 0;
+}
+
+main .text-block3 img{
+    width: 50%;
+}
+
+main .text-block3 .content{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+main .text-block3 .content .texts{
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+main .text-block3 .content .texts div{
+    margin: 2rem 0;
+}
+
+main .text-block3 .content .texts h3{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-family: "Overpass";
+    font-weight: 600;
+    color: var(--super-black-blue);
+}
+
+main .text-block3 .content .texts p{
+    font-size: 1.25rem;
+    font-family: "Overpass";
+    font-weight: 300;
+    color: var(--super-dark-blue);
+}
+
+/* MAIN END */
